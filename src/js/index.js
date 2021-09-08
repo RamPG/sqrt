@@ -24,10 +24,13 @@ const getButton = function (buttonElement) {
 window.addEventListener("DOMContentLoaded", () => {
     const buttonElements = document.querySelectorAll('.btn');
     const deleteButton = document.querySelector('.delButton');
-    const leftButton = document.querySelector('.leftButton');
-    const rightButton = document.querySelector('.rightButton');
     const clearButton = document.querySelector('.clearButton');
     const resultButton = document.querySelector('.resultButton');
+    const inputElement = document.querySelector('.inputLine');
+    const outputElement = document.querySelector('.outputLine');
+    const leftButton = document.querySelector('.leftButton');
+    const rightButton = document.querySelector('.rightButton');
+    const fixElement = document.querySelector('.precision');
     const buttons = []
     buttonElements.forEach((element) => {
         buttons.push({
@@ -38,6 +41,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const input = new Input({
         inputValue: '',
         cursorValue: 0,
+        fixValue: 10,
     });
     buttons.forEach(({button, element}) => {
         element.addEventListener('click', () => {
@@ -45,23 +49,28 @@ window.addEventListener("DOMContentLoaded", () => {
                 symbol: button.getSymbol(),
                 cursorValue: button.getUpdatedCursorValue(input.getCursorValue())
             });
-            console.log(input.getInputValue(), input.getCursorValue());
+            inputElement.innerHTML = input.getInputValue();
         });
+    });
+    fixElement.addEventListener('change', () => {
+       input.updateFixValue(parseInt(fixElement.value));
     });
     deleteButton.addEventListener('click', () => {
         input.deleteInput();
+        inputElement.innerHTML = input.getInputValue();
     });
     clearButton.addEventListener('click', () => {
         input.clearInput();
+        inputElement.innerHTML = input.getInputValue();
     })
+    resultButton.addEventListener('click', () => {
+        outputElement.innerHTML = (input.resultInput().join(' '));
+    });
     leftButton.addEventListener('click', () => {
         input.leftInput();
     });
     rightButton.addEventListener('click', () => {
         input.rightInput();
-    });
-    resultButton.addEventListener('click', () => {
-        input.resultInput();
     });
 
 })
