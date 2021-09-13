@@ -2,54 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>sqrt calc</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="inputLine">
+<header>
+    <ul>
+        <li>
+            <a href="./index.html">eng</a>
+        </li>
+        <li>
+            <a href="./lang/ru.html">рус</a>
+        </li>
+        <li>
+            <a href="./lang/es.html">esp</a>
+        </li>
+        <li>
+            <a href="./lang/zh.html">中文</a>
+        </li>
+    </ul>
+    <a href="user-guide.html">User guide</a>
+</header>
+<div id="calculator">
+    <div class="inputLine"></div>
+    <div class="outputLine"></div>
+    <br>
+    <br>
+    <br>
+    <button id="log)" class="btn funcButton">log</button>
+    <button id="sin(" class="btn funcButton">sin</button>
+    <button id="cos(" class="btn funcButton">cos</button>
+    <button id="abs(" class="btn funcButton">abs</button>
+    <button id="tan(" class="btn funcButton">tg</button>
+    <button id="cot(" class="btn funcButton">ctg</button>
+    <button id="e" class="btn symbolButton">e</button>
+    <button id="deg" class="btn actionButton">°</button>
+    <button id="i" class="btn symbolButton">i</button>
+    <button id="(" class="btn symbolButton">(</button>
+    <button id=")" class="btn symbolButton">)</button>
+    <button id="sqrt(" class="btn funcButton">√</button>
+    <button id="1" class="btn symbolButton">1</button>
+    <button id="2" class="btn symbolButton">2</button>
+    <button id="3" class="btn symbolButton">3</button>
+    <button id="pow(" class="btn funcButton">^</button>
+    <button id="pi" class="btn symbolButton">𝜋</button>
+    <button id="/" class="btn actionButton">÷</button>
+    <button id="4" class="btn symbolButton">4</button>
+    <button id="5" class="btn symbolButton">5</button>
+    <button id="6" class="btn symbolButton">6</button>
+    <button id="*" class="btn actionButton">*</button>
+    <button id="+" class="btn actionButton">+</button>
+    <button id="-" class="btn actionButton">-</button>
+    <button id="7" class="btn symbolButton">7</button>
+    <button id="8" class="btn symbolButton">8</button>
+    <button id="9" class="btn symbolButton">9</button>
+    <button id="0" class="btn symbolButton">0</button>
+    <button id="." class="btn symbolButton">•</button>
+    <button id="," class="btn symbolButton">,</button>
+    <button id="clear" class="clearButton">AC</button>
+    <button id="del" class="delButton">C</button>
+    <button id="calc" class="resultButton">=</button>
+    <p>
+        Number of decimal places:
+    </p>
+    <input type="number" id="acc" class="precision" value="10" max="100" min="1">
 </div>
-<div class="outputLine">
-</div>
 <br>
-<button id="log()" class="btn funcButton">log</button>
-<button id="i" class="btn symbolButton">i</button>
-<button id="sin()" class="btn funcButton">sin</button>
-<button id="cos()" class="btn funcButton">cos</button>
-<button id="abs()" class="btn funcButton">abs</button>
-<button id="e" class="btn symbolButton">e</button>
-<button id="deg" class="btn actionButton">°</button>
-<br>
-<button id="tan()" class="btn funcButton">tg</button>
-<button id="cot()" class="btn funcButton">ctg</button>
-<button id="(" class="btn symbolButton">(</button>
-<button id=")" class="btn symbolButton">)</button>
-<button id="sqrt()" class="btn funcButton">√</button>
-<button id="pow()" class="btn funcButton">^</button>
-<br>
-<button id="pi" class="btn symbolButton">𝜋</button>
-<button id="1" class="btn symbolButton">1</button>
-<button id="2" class="btn symbolButton">2</button>
-<button id="3" class="btn symbolButton">3</button>
-<button id="4" class="btn symbolButton">4</button>
-<button id="5" class="btn symbolButton">5</button>
-<button id="6" class="btn symbolButton">6</button>
-<br>
-<button id="7" class="btn symbolButton">7</button>
-<button id="8" class="btn symbolButton">8</button>
-<button id="9" class="btn symbolButton">9</button>
-<button id="0" class="btn symbolButton">0</button>
-<button id="calc" class="resultButton">=</button>
-<button id="/" class="btn actionButton">÷</button>
-<button id="*" class="btn actionButton">*</button>
-<br>
-<button id="." class="btn symbolButton">.</button>
-<button id="," class="btn symbolButton">,</button>
-<button id="+" class="btn actionButton">+</button>
-<button id="-" class="btn actionButton">-</button>
-<button id="clear" class="clearButton">AC</button>
-<button id="left" class="leftButton"><-</button>
-<button id="right" class="rightButton">-></button>
-<button id="del" class="delButton">C</button>
-<input type="number" id="acc" class="precision" value="10" max="100" min="1">
+<footer>
+    <a href="https://t.me/sqrtcalc_bot">Support service</a>
+</footer>
 <script src="build.js"></script>
 
 </body>
