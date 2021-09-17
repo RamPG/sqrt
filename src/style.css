@@ -1,0 +1,133 @@
+html, body {
+    font-size: 12pt;
+    font-family: "roboto", "arial", "sans-serif";
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+    background: #939393;
+}
+*{
+    box-sizing: -webkit-border-box;
+    box-sizing: border-box;
+}
+
+
+#calculator {
+    width: 400px;
+    height: 600px;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #FFF;
+    border-radius: 7px;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+#answer {
+
+
+}
+
+#calculator .inputLine{
+    background: rgba(0,0,0,0.08);
+    margin: 0 25px;
+    width: 270px;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+#calculator .outputLine{
+    background: rgba(0,0,0,0.2);
+    margin: 0 25px;
+    width: 270px;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+#calculator .clearButton{
+    width: 70px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 9px;
+    font-size: 20px;
+
+}
+#calculator .funcButton{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+#calculator .symbolButton {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+#calculator .actionButton {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+#calculator .resultButton {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+#calculator .delButton {
+    width: 70px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+#calculator .precision {
+    width: 60px;
+    height: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 20px;
+
+}
+footer {
+    text-align: center;
+
+
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+ul {
+    text-align: center;
+}
+li {
+    text-decoration: none;
+    display: inline-block;
+}
